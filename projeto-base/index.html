@@ -18,7 +18,7 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">fruta & fruto</a>
+        <a class="navbar-brand fonte-titulo texto-cor-especial" href="#">fruta & fruto</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -189,37 +189,50 @@
     </section>
     </main>
 
-   <!-- Button trigger modal -->
-   <!--
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>-->
+   <footer class='bg-secondary p-3'>
+    <p class='text-light m-0 text-center'>
+      contato: <a class='text-light'href="mailto:email@frutafruto.com.br"
+        >email@frutafruto.com.br</a
+      >
+    </p>
+   </footer>
 
 <!-- Modal -->
 <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+    <dialog class="modal-content">
+      <header class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
+      </header>
+      <main class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Insira seu nome completo</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Seu nome">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Insira um endereço de email em que você deseja receber uma resposta</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Deixe seu comentário</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </form>
+      </main>
+      <footer class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
+        <button type="button" class="btn botao-cor-especial">Save changes</button>
+      </footer>
+    </dialog>
   </div>
 </div>
-    <p>
-      contato:<a href="mailto:email@frutafruto.com.br"
-        >email@frutafruto.com.br</a
-      >
-    </p>
+   
 
     <script src="src/js/jquery-3.6.0.min.js"></script>
     <script src="src/js/bootstrap.min.js"></script>
